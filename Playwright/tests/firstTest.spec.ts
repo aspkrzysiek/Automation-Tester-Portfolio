@@ -1,14 +1,20 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('1st test suite', () => {
+test.describe('Automated Swag Labs', () => {
 
-    test('login to saucedemo', async ({ page }) => {
+    test('login as standard user', async ({ page }) => {
         await page.goto('https://www.saucedemo.com/');
         await expect(page).toHaveTitle("Swag Labs");
         await page.getByPlaceholder('Username').fill('standard_user');
-        await page.getByPlaceholder('Passowrd').fill('secret_sauce');
+        await page.getByPlaceholder('Password').fill('secret_sauce');
         await page.getByRole('button', { name: 'Login' }).click();
         await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
+        await page.locator('.inventory_item', { hasText: 'Sauce Labs Backpack' })
+          .getByRole('button', { name: 'Add to cart' })
+          .click();
+          const cartBadge = page.locator('.shopping_cart_badge');
+          await expect(cartBadge).toHaveText('1');
+
     });
 
 });
