@@ -18,7 +18,7 @@ const occupation = "Engineer"
 //const occupation //Values must be assigned
 console.log(occupation)
 const experience = "Advanced"
-const asdasdas  
+//const asdasdas  
 
 console.log(experience)
 
