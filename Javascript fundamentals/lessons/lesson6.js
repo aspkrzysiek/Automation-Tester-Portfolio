@@ -13,7 +13,7 @@ if(condition){
 // If hour between 12 and 18 print "Good Afternoon"
 // Otherwise: Good evening
 
-var hour = 5
+var hour = 12
 
 if(hour >= 6 && hour < 12)
 {

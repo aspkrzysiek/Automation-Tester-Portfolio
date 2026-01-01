@@ -14,8 +14,10 @@ console.log(`${customer.firstName} ${customer.secondName}`)
 
 //Array - list of items you want to save
 var car = ["Volvo", "Toyota", "Tesla"]
-//overwritten
+// Overwritten
 car[0] = "BMW"
 console.log(car[0])
+// Not overwritten
+console.log(car[1])
 //Objects ale cand have Arrays
 console.log(customer.cars)
