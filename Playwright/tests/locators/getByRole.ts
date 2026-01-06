@@ -1,4 +1,4 @@
-//npx playwright test 2_getByRole.ts --ui
+//npx playwright test getByRole.ts --ui
 import {test,expect} from'@playwright/test'
 
 test
