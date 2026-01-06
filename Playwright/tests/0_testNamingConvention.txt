@@ -1,0 +1,40 @@
+test.spec.ts
+Meaning: “This file contains the specification of how the system should behave.”
+
+
+login.test.ts
+cart.test.ts
+Meaning: “This file contains tests.”
+
+
+checkout.e2e.ts
+auth.e2e.ts
+Meaning: “This is a full system test.”
+
+login.ui.ts
+dashboard.ui.ts
+Meaning: “This file tests the UI layer.”
+
+
+payment.integration.ts
+user.integration.ts
+Meaning: “Multiple components working together.”
+
+search.functional.ts
+orders.functional.ts
+Meaning: “Test that features function correctly.”
+
+
+login.smoke.ts
+health.smoke.ts
+Meaning: “Critical path only.”
+
+checkout.regression.ts
+Meaning: “Ensure old bugs don’t return.”
+
+guest-checkout.scenario.ts
+Meaning: “User/system scenario.”
+
+purchase.flow.ts
+Meaning: “Step-by-step flows.”
+
