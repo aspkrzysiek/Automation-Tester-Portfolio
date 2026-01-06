@@ -39,3 +39,12 @@ Kod
 //table//tr
 Finds all <tr> rows inside a <table>.
 */
+
+
+//XPath	Meaning
+//tag	Find all elements with that tag
+//tag[text()="X"]	Find element with exact text
+//tag[@attr="value"]	Find element by attribute
+//tag1//tag2	tag2 inside tag1
+//tag[condition]	Filter elements
+//tr[td[text()="X"]]	Table row containing a cell with text X
