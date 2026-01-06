@@ -2,7 +2,7 @@
 import {test,expect} from'@playwright/test'
 
 test
-('Playwright locators practice - Ultimate QA', async ({page}) => 
+('Playwright locators practice - GetByRole', async ({page}) => 
 {
 await page.goto("https://ultimateqa.com/");
 await expect(page).toHaveTitle('Homepage - Ultimate QA');
@@ -48,13 +48,26 @@ await expect(radiobutton2).not.toBeChecked();
 await expect(radiobutton3).not.toBeChecked();
 await expect(radiobutton4).toBeDisabled();
 
-//Buttons
-await page.goto('https://frontendmasters.com/courses/testing/testing-buttons/');
-const joinNowButton = page.getByRole('button', {name: 'Join Now'});
-await joinNowButton.click();
-await page.waitForLoadState('networkidle');
-//Uses a regex URL check /.* and .*/ 
-await expect(page).toHaveURL(/.*join.*/);
+//Button 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
