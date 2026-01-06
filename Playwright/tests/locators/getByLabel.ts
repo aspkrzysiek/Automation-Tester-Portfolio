@@ -11,6 +11,6 @@ await selectCountry.selectOption('Brazil');
 await expect(selectCountry).toHaveValue('Brazil');
 
 const EmailForNewsletter = page.getByLabel('Email for newsletter');
-await EmailForNewsletter.fill('someEmail@gmail.com')
-
+await EmailForNewsletter.fill('someEmail@gmail.com');
+expect(EmailForNewsletter).toHaveValue('someEmail@gmail.com');
 });
